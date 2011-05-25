@@ -26,7 +26,7 @@ print the GATC. Because of the location from which the hook is fired in
 the template rendering process, this causes the tracking code to output
 in the middle of the &lthead&rt tag. This is generally fine, although
 ideally the tracking code would be located at the very end of the
-document, just before the close of the &ltbody&rt tag, so as to avoid
+document, just before the close of the &lt;body&gt; tag, so as to avoid
 any hanging during page load if there is higher than normal latency when
 the script tries to dial back to Google. Omeka does not currently fire a
 plugin hook at that location in the template rendering process, and a
