@@ -40,7 +40,10 @@ add_plugin_hook('public_theme_header', 'google_analytics_insertGATC');
 
 
 /**
- * Include the configuration form.
+ * Include the configuration form
+ *
+ * @return void
+ *
  */
 function google_analytics_config_form()
 {
@@ -52,6 +55,9 @@ function google_analytics_config_form()
 
 /**
  * Save changes to the tracking code.
+ *
+ * @return void
+ *
  */
 function google_analytics_config()
 {
@@ -64,6 +70,9 @@ function google_analytics_config()
 
 /**
  * Print the tracking code in the <head> tag.
+ *
+ * @return void
+ *
  */
 function google_analytics_insertGATC()
 {
